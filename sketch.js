@@ -8,7 +8,7 @@ function setup() {
   capture.size(320, 240);
   
 
-
+  
   // connect to server...
   socket = new WebSocket('ws://' + host);
   socket.onopen = openHandler;
@@ -30,13 +30,16 @@ function messageHandler(event) {
 
 function draw() {
   background(255);
-  //image(capture, 0, 0, 320, 240);
+  image(capture, 0, 0, 320, 240);
   //filter(INVERT);
 
-  if (personOrNot == 1){
-    image(capture, 0, 0, 320, 240);
-  } else {
-    capture.hide();
-  }
-}
+
+
+
+//   if (personOrNot == 1){
+//     image(capture, 0, 0, 320, 240);
+//   } else {
+//     capture.hide();
+//   }
+ }
 
